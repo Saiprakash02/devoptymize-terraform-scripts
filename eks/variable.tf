@@ -40,6 +40,12 @@ variable "log_types" {
   default     = []
 }
 
+variable "cluster_service_cidr" {
+  type        = string
+  default     = ""
+  description = "Cluster service CIDR block"
+}
+
 variable "node_group_name" {
   type = string
   default = ""
