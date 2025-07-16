@@ -66,6 +66,7 @@ module "eks_managed_node_group" {
   name            = var.node_group_name
   cluster_name    = module.eks.cluster_name 
   cluster_version = var.k8s_version
+  cluster_service_cidr = var.cluster_service_cidr
 
   subnet_ids = var.subnet_id
   vpc_security_group_ids = [module.eks.node_security_group_id]
