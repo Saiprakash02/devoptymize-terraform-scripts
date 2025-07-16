@@ -9,14 +9,12 @@ module "ec2" {
   vpc_security_group_ids = var.security_group_id
   subnet_id              = var.subnet_id
   
-  root_block_device = [
-    {
+  root_block_device = {
       encrypted   = true
       volume_type = "gp3"
       throughput  = 200
       volume_size = var.root_volume_size
-    },
-  ]
+  },
   
   tags = {
     Terraform   = "true"
