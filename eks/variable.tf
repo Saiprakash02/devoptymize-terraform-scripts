@@ -46,6 +46,11 @@ variable "node_group_name" {
   description = "Name of the node group"
 }
 
+variable "cluster_service_cidr" {
+  type        = string
+  default     = "10.100.0.0/16"
+  description = "CIDR block used for Kubernetes service IPs"
+}
 
 variable "node_capacity_type" {
   type        = string
