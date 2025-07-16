@@ -8,7 +8,6 @@
   cluster_endpoint_public_access  = var.cluster_endpoint_public_access  #disabling endpoint public access
   vpc_id     = var.vpc_id
   subnet_ids = var.subnet_id
-  cluster_service_cidr = var.cluster_service_cidr
   create_iam_role = true #Creating cluster role
   iam_role_name = "${var.environment}-${var.cluster_name}-eks-role" #name for cluster role
   cluster_enabled_log_types = var.log_types
