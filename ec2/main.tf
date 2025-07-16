@@ -1,6 +1,6 @@
 module "ec2" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.72"
+  version = "~> 6.0.2"
 
   name = var.instance_name
   ami                    = var.ami_id
