@@ -42,8 +42,8 @@ variable "log_types" {
 
 variable "cluster_service_cidr" {
   type        = string
-  default     = ""
-  description = "Cluster service CIDR block"
+  description = "CIDR block for Kubernetes service IP range"
+  default     = "10.100.0.0/16"  # You can use a sensible default if not passed explicitly
 }
 
 variable "node_group_name" {
