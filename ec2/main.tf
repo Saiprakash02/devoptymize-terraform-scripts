@@ -14,7 +14,7 @@ module "ec2" {
       volume_type = "gp3"
       throughput  = 200
       volume_size = var.root_volume_size
-  },
+  }
   
   tags = {
     Terraform   = "true"
